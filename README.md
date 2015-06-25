@@ -1934,7 +1934,7 @@ module API
     version 'v1'
 
     desc 'Statuses index' do
-      params: API::Entities::Status.documentation
+      params API::Entities::Status.documentation
     end
     get '/statuses' do
       statuses = Status.all
